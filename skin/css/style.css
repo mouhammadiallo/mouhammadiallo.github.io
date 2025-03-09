@@ -106,7 +106,7 @@ header{
     color: rgb(65, 65, 65);
 }
 .infocontactperso{
-    height: 3vw;
+    height: 40px;
     overflow: hidden;
     width: 100%;
     display: flex;
@@ -123,13 +123,14 @@ header{
 }
 .infoducontact{
     width: 20%;
-    height: 90%;
+    height: 95%;
     overflow: hidden;
     padding: none;
     display: flex;
+    display: flex;
 }
 .nomdulogo{
-    font-size: 16px;
+    font-size: 20px;
     width: 100%;
     color: black;
     display: flex;
@@ -445,7 +446,7 @@ footer a{
         padding-top: 35px;
     }
     .liensiteweb {
-        font-size: 4.645vw;
+        font-size: 4vw;
     }
     .navbar{
         height: 40px;
@@ -481,7 +482,7 @@ footer a{
         box-sizing: border-box;
     }
     .nomdulogo {
-        font-size: 2vw;
+        font-size: 2.5vw;
     }
     .grid {
         width: 100%;
@@ -501,7 +502,8 @@ footer a{
         font-size: 4.3vw;
     }
     .loc {
-        padding-top: 0;
+        padding-top: 5px;
+        margin-top: 3px;
     }
     .nomdeecole {
         flex-direction: column;
@@ -519,5 +521,15 @@ footer a{
     footer{
         height: 20vw;
         font-size: 2.5vw;
+        width: 100%;
+    }
+    .infocontactperso{
+        height: 25px;
+    }
+    .leslogos {
+        width: 35%;
+    }
+    .infoducontact {
+        width: 30%;
     }
   }
