@@ -25,7 +25,7 @@ body {
     color: rgb(185, 62, 0);
 }
 hr{
-    border: solid 1px black;
+    border: solid 1px rgb(172, 172, 172);
     width: 80%;
 }
 
@@ -97,7 +97,7 @@ header{
 }
 
 .infofonction {
-    font-size: 2.5vw;
+    font-size: 2.3vw;
 }
 .lieufonction{
     color: rgb(185, 62, 0);
@@ -208,7 +208,7 @@ header{
 .sem{
     width: 48%;
     display: flex;
-    border-radius: 12px;
+    border-radius: 5px;
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -385,7 +385,7 @@ footer{
     flex-direction: column;
     background-color: rgb(206, 206, 206);
     justify-content: center;
-    font-size: 1.7vw;
+    font-size: 1.5vw;
 }
 .tralala {
     display: flex;
@@ -440,6 +440,22 @@ footer a{
     }
 }
 @media screen and (max-width: 720px) {
+    body {
+        font-size: 3vw;
+        padding-top: 40px;
+    }
+    .liensiteweb {
+        font-size: 4.8vw;
+    }
+    .navbar{
+        height: 40px;
+    }
+    .nav{
+        display: none;
+    }
+    .level {
+        font-size: 3vw;
+    }
     .sect {
         border-radius: 0;
     }
@@ -447,13 +463,18 @@ footer a{
         border-radius: 0;
         width: 100%;
         box-sizing: border-box;
+        margin-bottom: 5px;
     }
     .infodiplome {
         max-width: 100%;
         box-sizing: border-box;
     }
+    .titresemestre {
+        font-size: 3.5vw;
+        text-decoration: underline;
+    }
     .nomdelaformation {
-        font-size: 18px;
+        font-size: 4vw;
     }
     .semestreuniversitaire {
         flex-direction: column;
@@ -462,9 +483,22 @@ footer a{
     .nomdulogo {
         font-size: 2vw;
     }
+    .grid {
+        width: 100%;
+    }
     .sem {
         width: auto;
         background-color: inherit;
+        border-radius: 0;
+    }
+    .ecole{
+        font-size: 3.5vw;
+    }
+    .volee {
+        font-size: 5.5vw;
+    }
+    .niveau {
+        font-size: 4.3vw;
     }
     .loc {
         padding-top: 0;
@@ -472,5 +506,18 @@ footer a{
     .nomdeecole {
         flex-direction: column;
         max-width: 100%;
+    }
+    .monnom {
+        font-size: 6vw;
+    }
+    .infofonction {
+        font-size: 3.5vw;
+    }
+    .aproposdemoi {
+        padding: 0;
+    }
+    footer{
+        height: 20vw;
+        font-size: 2.5vw;
     }
   }
