@@ -6,10 +6,10 @@ html {
 
 body {
     background-color: rgb(230, 230, 230);
-    font-size: 100%;
     font-family: rockwell, serif;
     box-sizing: content-box;
     padding-top: 60px;
+
 }
 
 .bar{
@@ -24,7 +24,10 @@ body {
 .orange{
     color: rgb(185, 62, 0);
 }
-
+hr{
+    border: solid 1px black;
+    width: 80%;
+}
 
 /*Debut de la partie 1 (Barre de navigation)*/
 
@@ -47,7 +50,7 @@ body {
     color: inherit;
 }
 #lienpage{
-    font-size: 39px;
+    font-size: 35px;
     padding-left: 2% ;
     transition: all 2.5s ease;
 }
@@ -126,7 +129,7 @@ header{
     display: flex;
 }
 .nomdulogo{
-    font-size: 1.5vw;
+    font-size: 16px;
     width: 100%;
     color: black;
     display: flex;
@@ -376,14 +379,13 @@ a{
     background: linear-gradient(to right, rgb(54, 103, 57) 90%, white 0%);
 }
 footer{
-    height: 2vw;
+    height: 13vw;
     width: 100%;
-    text-align: center;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    background-color: rgb(206, 206, 206);
     justify-content: center;
-    background-color: white;
-    height: 10vh;
+    font-size: 1.7vw;
 }
 .tralala {
     display: flex;
@@ -400,3 +402,75 @@ footer{
     height: 5vw;
 }
 
+.contenaire1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logofooter{
+    max-width: 6vw;
+    max-height: 6vw;
+    box-sizing: border-box;
+}
+.contenaire2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer a{
+    text-decoration: none;
+    color: rgb(41, 33, 116);
+}
+.reference{
+    border-left: solid 2px black;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 790px) and (min-width: 721px) {
+    .liensiteweb {
+        font-size: 30px;
+    }
+    .lienancrenav{
+        font-size: 15px;
+    }
+    .sect {
+        border-radius: 30px;
+    }
+}
+@media screen and (max-width: 720px) {
+    .sect {
+        border-radius: 0;
+    }
+    .infolieu {
+        border-radius: 0;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .infodiplome {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+    .nomdelaformation {
+        font-size: 18px;
+    }
+    .semestreuniversitaire {
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+    .nomdulogo {
+        font-size: 2vw;
+    }
+    .sem {
+        width: auto;
+        background-color: inherit;
+    }
+    .loc {
+        padding-top: 0;
+    }
+    .nomdeecole {
+        flex-direction: column;
+        max-width: 100%;
+    }
+  }
