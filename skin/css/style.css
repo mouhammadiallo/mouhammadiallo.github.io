@@ -442,10 +442,10 @@ footer a{
 @media screen and (max-width: 720px) {
     body {
         font-size: 3vw;
-        padding-top: 40px;
+        padding-top: 35px;
     }
     .liensiteweb {
-        font-size: 4.8vw;
+        font-size: 4.645vw;
     }
     .navbar{
         height: 40px;
