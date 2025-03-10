@@ -127,14 +127,18 @@ header{
     overflow: hidden;
     padding: none;
     display: flex;
-    display: flex;
+    justify-content: center;
+    border: solid blue 1px;
+    align-items: end;
 }
 .nomdulogo{
-    font-size: 20px;
+    font-size: 25px;
     width: 100%;
     color: black;
     display: flex;
     align-items: end;
+    margin-left: 5%;
+    border: solid red 1px;
 }
 .aproposdemoi {
     align-items: center;
@@ -303,7 +307,6 @@ header{
     color: inherit;
 }
 a{
-    display: flex;
     text-decoration: none;
     align-items: end;
 }
@@ -442,20 +445,22 @@ footer a{
 }
 @media screen and (max-width: 720px) {
     body {
-        font-size: 3vw;
-        padding-top: 35px;
+        font-size: 13px;
+        padding-top: 8vw;
     }
     .liensiteweb {
         font-size: 4vw;
+        display: flex;
+        align-items: center;
     }
     .navbar{
-        height: 35px;
+        height: 8vw;
     }
     .nav{
         display: none;
     }
     .level {
-        font-size: 3vw;
+        font-size: 16px;
     }
     .sect {
         border-radius: 0;
@@ -471,21 +476,26 @@ footer a{
         box-sizing: border-box;
     }
     .titresemestre {
-        font-size: 3.5vw;
+        font-size: 15px;
         text-decoration: underline;
     }
     .nomdelaformation {
-        font-size: 4vw;
+        font-size: 19px;
     }
     .semestreuniversitaire {
         flex-direction: column;
         box-sizing: border-box;
     }
     .nomdulogo {
-        font-size: 2.5vw;
+        font-size: 3vw;
     }
     .grid {
         width: 100%;
+        grid-template-columns: repeat(2, 1fr); 
+        grid-template-rows: repeat(4, auto);
+        gap: 10px;
+        width: 100%; 
+        padding: 2px;
     }
     .sem {
         width: auto;
@@ -493,13 +503,13 @@ footer a{
         border-radius: 0;
     }
     .ecole{
-        font-size: 3.5vw;
+        font-size: 15px;
     }
     .volee {
-        font-size: 5.5vw;
+        font-size: 25px;
     }
     .niveau {
-        font-size: 4.3vw;
+        font-size: 18px;
     }
     .loc {
         padding-top: 5px;
@@ -510,10 +520,10 @@ footer a{
         max-width: 100%;
     }
     .monnom {
-        font-size: 6vw;
+        font-size: 25px;
     }
     .infofonction {
-        font-size: 3.5vw;
+        font-size: 18px;
     }
     .aproposdemoi {
         padding: 0;
@@ -527,9 +537,10 @@ footer a{
         height: 25px;
     }
     .leslogos {
-        width: 35%;
+        width: 30%;
     }
     .infoducontact {
         width: 30%;
+        
     }
   }
