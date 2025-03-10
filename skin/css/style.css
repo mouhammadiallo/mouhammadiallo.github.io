@@ -128,17 +128,15 @@ header{
     padding: none;
     display: flex;
     justify-content: center;
-    border: solid blue 1px;
     align-items: end;
 }
 .nomdulogo{
-    font-size: 25px;
+    font-size: 22px;
     width: 100%;
     color: black;
     display: flex;
     align-items: end;
     margin-left: 5%;
-    border: solid red 1px;
 }
 .aproposdemoi {
     align-items: center;
@@ -446,7 +444,7 @@ footer a{
 @media screen and (max-width: 720px) {
     body {
         font-size: 13px;
-        padding-top: 8vw;
+        padding-top: 7vw;
     }
     .liensiteweb {
         font-size: 4vw;
@@ -487,7 +485,9 @@ footer a{
         box-sizing: border-box;
     }
     .nomdulogo {
-        font-size: 3vw;
+        font-size: 12px;
+        margin-left: 0;
+        width: auto;
     }
     .grid {
         width: 100%;
@@ -534,7 +534,7 @@ footer a{
         width: 100%;
     }
     .infocontactperso{
-        height: 25px;
+        height: 20px;
     }
     .leslogos {
         width: 30%;
