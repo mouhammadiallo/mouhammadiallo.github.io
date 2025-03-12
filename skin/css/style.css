@@ -277,11 +277,15 @@ header{
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
-    grid-template-rows: repeat(3, auto);
+    grid-template-rows: repeat(1, auto);
     gap: 10px;
     width: 80%; 
     padding: 10px; 
-    
+}
+.titrecompt {
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 5px;
 }
 
 .infodiplome{
@@ -293,6 +297,7 @@ header{
 
 .competence {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     align-self: center;
@@ -327,15 +332,11 @@ a{
     color: rgb(0, 0, 0);
 }
 
-
-
-
 .post{
     height: 5vw;
     display: flex;
     border-bottom: solid 1px rgb(152, 152, 152);
     padding-bottom: 2%;
-
 }
 .logpro{
     height: 100%;
@@ -350,8 +351,8 @@ a{
     height: 100%;
     width: 100%;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 .line{
     height: 20%;
@@ -379,6 +380,9 @@ a{
 }
 #ligne7{
     background: linear-gradient(to right, rgb(54, 103, 57) 90%, white 0%);
+}
+#ligne8{
+    background: linear-gradient(to right, rgb(54, 103, 57) 50%, white 0%);
 }
 footer{
     height: 13vw;
@@ -457,8 +461,15 @@ footer a{
     .nav{
         display: none;
     }
+    .post {
+        height: 7vw;
+    }
+    .titrecompt{
+        font-size: 16px;
+    }
     .level {
         font-size: 16px;
+        text-align: center;
     }
     .sect {
         border-radius: 0;
