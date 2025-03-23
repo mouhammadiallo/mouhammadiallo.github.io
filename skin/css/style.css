@@ -9,7 +9,6 @@ body {
     font-family: rockwell, serif;
     box-sizing: content-box;
     padding-top: 60px;
-
 }
 
 .bar{
@@ -197,7 +196,7 @@ header{
 }
 
 #education, #competence, #projets{
-    scroll-margin-top: 60px;
+    scroll-margin-top: 75px;
 }
 
 .titresemestre {
@@ -286,6 +285,7 @@ header{
     font-size: 20px;
     text-transform: uppercase;
     padding: 5px;
+    color: black;
 }
 
 .infodiplome{
@@ -384,12 +384,14 @@ a{
 #ligne8{
     background: linear-gradient(to right, rgb(54, 103, 57) 50%, white 0%);
 }
+#ligne9{
+    background: linear-gradient(to right, rgb(54, 103, 57) 15%, white 0%);
+}
 footer{
-    height: 13vw;
+    height: 15vw;
     width: 100%;
     display: flex;
     flex-direction: column;
-    background-color: rgb(206, 206, 206);
     justify-content: center;
     font-size: 1.5vw;
 }
@@ -402,6 +404,7 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 30vw;
 }
 #horloge {
     width: 5vw;
@@ -412,13 +415,13 @@ footer{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-direction: column;
 }
-
-.logofooter{
-    max-width: 6vw;
-    max-height: 6vw;
-    box-sizing: border-box;
-}
+.lescontactes {
+    display: flex;
+    width: 25%;
+    justify-content: space-between;
+} 
 .contenaire2{
     display: flex;
     justify-content: center;
@@ -429,10 +432,20 @@ footer a{
     color: rgb(41, 33, 116);
 }
 .reference{
-    border-left: solid 2px black;
-    padding-left: 10px;
     box-sizing: border-box;
+    text-align: center;
 }
+.contactfooter {
+    display: flex;
+    align-items: center;
+}
+.logofooter {
+    width: 3vw;
+    height: 3vw;
+    object-fit: contain;
+    margin-right: 3px;
+}
+
 
 @media screen and (max-width: 790px) and (min-width: 721px) {
     .liensiteweb {
@@ -540,9 +553,17 @@ footer a{
         padding: 0;
     }
     footer{
-        height: 20vw;
-        font-size: 2.5vw;
+        height: auto;
+        font-size: 12px;
         width: 100%;
+        padding: 5px 0;
+    }
+    .logofooter {
+        width: 20px;
+        height: 20px;
+    }
+    .lescontactes {
+        width: 60%;
     }
     .infocontactperso{
         height: 20px;
@@ -553,5 +574,8 @@ footer a{
     .infoducontact {
         width: 30%;
         
+    }
+    .travail {
+        height: 50vw;
     }
   }
