@@ -382,10 +382,10 @@ a{
     background: linear-gradient(to right, rgb(54, 103, 57) 90%, white 0%);
 }
 #ligne8{
-    background: linear-gradient(to right, rgb(54, 103, 57) 50%, white 0%);
+    background: linear-gradient(to right, rgb(54, 103, 57) 80%, white 0%);
 }
 #ligne9{
-    background: linear-gradient(to right, rgb(54, 103, 57) 15%, white 0%);
+    background: linear-gradient(to right, rgb(54, 103, 57) 75%, white 0%);
 }
 footer{
     height: 15vw;
