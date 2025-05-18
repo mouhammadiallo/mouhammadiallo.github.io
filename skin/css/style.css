@@ -387,6 +387,13 @@ a{
 #ligne9{
     background: linear-gradient(to right, rgb(54, 103, 57) 75%, white 0%);
 }
+#ligne10{
+    background: linear-gradient(to right, rgb(54, 103, 57) 35%, white 0%);
+}
+#ligne10{
+    background: linear-gradient(to right, rgb(54, 103, 57) 35%, white 0%);
+}
+
 footer{
     height: 15vw;
     width: 100%;
