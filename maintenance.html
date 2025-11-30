@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site en Maintenance</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #333;
+        }
+
+        .maintenance-container {
+            text-align: center;
+            background: white;
+            padding: 60px 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+            animation: slideDown 0.6s ease-out;
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .maintenance-icon {
+            font-size: 80px;
+            margin-bottom: 20px;
+            animation: rotate 3s linear infinite;
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #667eea;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.1em;
+            color: #666;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        .countdown {
+            font-size: 1.3em;
+            color: #764ba2;
+            margin-bottom: 30px;
+            font-weight: bold;
+        }
+
+        .countdown span {
+            display: inline-block;
+            background: #f0f0f0;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 5px;
+            min-width: 60px;
+        }
+
+        .countdown span label {
+            display: block;
+            font-size: 0.7em;
+            color: #999;
+            text-transform: uppercase;
+        }
+
+        .email-section {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+
+        .email-section p {
+            margin-bottom: 10px;
+            font-size: 1em;
+        }
+
+        .email-section a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .email-section a:hover {
+            text-decoration: underline;
+        }
+
+        .social-links {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background: #764ba2;
+            transform: translateY(-3px);
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 4px;
+            background: #e0e0e0;
+            border-radius: 2px;
+            overflow: hidden;
+            margin-top: 30px;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            animation: progress 2s ease-in-out infinite;
+        }
+
+        @keyframes progress {
+            0%, 100% {
+                width: 0;
+            }
+            50% {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="maintenance-container">
+        <div class="maintenance-icon">🔧</div>
+        
+        <h1>Site en Maintenance</h1>
+        
+        <p>
+            Nous effectuons actuellement des opérations de maintenance pour améliorer 
+            votre expérience utilisateur. Nous serons bientôt de retour !
+        </p>
+
+        <div class="countdown" id="countdown">
+            <span>
+                <span id="days">0</span>
+                <label>Jours</label>
+            </span>
+            <span>
+                <span id="hours">0</span>
+                <label>Heures</label>
+            </span>
+            <span>
+                <span id="minutes">0</span>
+                <label>Minutes</label>
+            </span>
+            <span>
+                <span id="seconds">0</span>
+                <label>Secondes</label>
+            </span>
+        </div>
+
+        <div class="email-section">
+            <p>📧 Restez informé de notre retour</p>
+            <p>
+                Contactez-nous : <a href="mailto:contact@example.com">contact@example.com</a>
+            </p>
+        </div>
+
+        <div class="social-links">
+            <a href="https://twitter.com" target="_blank" title="Twitter">𝕏</a>
+            <a href="https://linkedin.com" target="_blank" title="LinkedIn">in</a>
+            <a href="https://github.com" target="_blank" title="GitHub">⚙️</a>
+        </div>
+
+        <div class="progress-bar">
+            <div class="progress-fill"></div>
+        </div>
+    </div>
+
+    <script>
+        // Définir la date de fin de maintenance (modifiez cette date selon vos besoins)
+        const maintenanceEndDate = new Date('2025-12-07T18:00:00').getTime();
+
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const timeRemaining = maintenanceEndDate - now;
+
+            // Calcul du temps restant
+            const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+
+            // Affichage des valeurs
+            document.getElementById('days').textContent = String(days).padStart(2, '0');
+            document.getElementById('hours').textContent = String(hours).padStart(2, '0');
+            document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
+            document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
+
+            // Si la maintenance est terminée
+            if (timeRemaining < 0) {
+                document.getElementById('countdown').textContent = '✅ Nous sommes de retour !';
+                document.getElementById('countdown').style.color = '#4caf50';
+                // Optionnel : rediriger vers la page principale
+                // window.location.href = '/';
+            }
+        }
+
+        // Mettre à jour le compte à rebours immédiatement et toutes les secondes
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+    </script>
+</body>
+</html>
