@@ -150,7 +150,7 @@ export default function MainPage() {
             </div>
             <a
               className="hover:bg-[#333333] active:bg-[#333333]"
-              href="/my-profile/files/cv_Mouhammad_DIALLO.pdf"
+              href="files/cv_Mouhammad_DIALLO.pdf"
               target="_blank"
               title="Voir mon CV"
             >

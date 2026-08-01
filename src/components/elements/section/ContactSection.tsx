@@ -80,7 +80,7 @@ export default function ContactSection() {
               {"\n"}
               {"    "}fichier:{" "}
               <a
-                href="/my-profile/files/cv_Mouhammad_DIALLO.pdf"
+                href="files/cv_Mouhammad_DIALLO.pdf"
                 target="_blank"
                 className="text-[#ce9178] hover:underline"
               >
