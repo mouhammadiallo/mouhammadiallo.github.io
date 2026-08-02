@@ -74,7 +74,9 @@ export default function ExperienceSection() {
         </SyntaxHighlighter>
       </div>
       <div ref={expRef} className="flex flex-col">
-        <h3 className="text-3xl font-bold text-[#ED816C]">Work Experience</h3>
+        <h3 className="text-3xl font-bold text-[#ED816C]">
+          Expérience professionnelle
+        </h3>
         <SyntaxHighlighter
           language="json"
           style={{

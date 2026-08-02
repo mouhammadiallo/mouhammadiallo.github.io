@@ -101,7 +101,7 @@ export default function BurgerMenu({ activTab, setActiveTab }: NavbarProps) {
         <div className="flex flex-col w-full">
           <a
             className="hover:bg-[#333333] active:bg-[#333333] max-w-20"
-            href="https://github.com/oleksandrholikov"
+            href="https://github.com/mouhammadiallo"
             target="_blank"
             title="Allez à mon GitHub"
           >
@@ -109,7 +109,7 @@ export default function BurgerMenu({ activTab, setActiveTab }: NavbarProps) {
           </a>
           <a
             className="hover:bg-[#333333] active:bg-[#333333] max-w-20"
-            href="https://linkedin.com/in/oleksandr-holikov"
+            href="https://linkedin.com/in/diallomouhammad"
             target="_blank"
             title="Allez à mon LinkedIn"
           >
